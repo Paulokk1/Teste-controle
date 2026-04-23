@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste controle</title>
+</head>
+<body>
+    <button onclick="W()">W</button>
+
+
+
+    <script>
+        function W() {
+            var dabliu = 'W'
+            window.alert(dabliu)
+
+            fetch("http://localhost:8000/dabliu", {
+                method: "POST", 
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ valor: dabliu})
+            }
+        }
+
+    </script>
+</body>
+</html>
