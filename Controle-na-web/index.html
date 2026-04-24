@@ -11,19 +11,20 @@
 
 
     <script>
-        function W() {
-            var dabliu = 'W'
-            window.alert(dabliu)
+function W() {
+    var dabliu = 'W'
+    window.alert(dabliu)
 
-            fetch("http://localhost:8000/dabliu", {
-                method: "POST", 
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({ valor: dabliu})
-            }
-        }
+    fetch("http://localhost:8000/dabliu", {
+        method: "POST", 
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ valor: dabliu})
+    });
 
-    </script>
+    window.alert('W')
+}
+</script>
 </body>
 </html>
